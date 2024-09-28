@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <title>Jan Ackermann</title>
+    <style>
+        .dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e3f2fd;
+            margin: 0;
+            padding: 0;
+            color: #000;
+        }
+
+        .dark-mode body {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        .highlight {
+            color: red;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .dark-mode .container {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .header .bio-text {
+            flex: 1;
+        }
+
+        .header .email-row {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .header img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .email {
+            font-size: 1em;
+            color: #333;
+        }
+
+        .dark-mode .email {
+            color: #ccc;
+        }
+
+        .bio {
+            margin-top: 10px;
+        }
+
+        .publications {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .publications li {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .dark-mode .publications li {
+            background-color: #2c2c2c;
+        }
+
+        .publications li:hover {
+            background-color: #e9e9e9;
+        }
+
+        .dark-mode .publications li:hover {
+            background-color: #3a3a3a;
+        }
+
+        .tldr {
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        .paper-title {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .authors {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .dark-mode .authors {
+            color: #aaa;
+        }
+
+        .journal {
+            font-style: italic;
+        }
+
+        .year {
+            color: gray;
+        }
+
+        .dark-mode .year {
+            color: #bbb;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        /* Dark Mode Toggle Button */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #f1f1f1;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .dark-mode .dark-mode-toggle {
+            background-color: #444;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="dark-mode-toggle" id="darkModeToggle">Toggle Dark Mode</button>
+    <div class="container">
+        <div class="header">
+            <div class="bio-text">
+                <h1>Jan Ackermann</h1>
+                <div class="email-row">
+                    <p class="email">Email: first.last at hotmail.com</p>
+                </div>
+                <p class="bio">Hello there! I am a master's student at ETH Zurich focussing on the intersection of
+                    <i>Vision,
+                        Graphics, and Deep Learning</i>. Currently, I am visiting <a
+                        href="https://stanford.edu/~gordonwz/">Gordon&nbsp;Wetzstein</a>'s lab at Stanford where I am
+                    lucky to be advised by <a href="https://www.guandaoyang.com/">Guandao&nbsp;Yang</a>. <br>
+                    Before that, I was an intern at Google in <a href="https://thabobeeler.com/">Thabo&nbsp;Beeler</a>'s
+                    group and a visiting student at PKU in <a href="http://www.liweiwang-pku.com/">Liwei&nbsp;Wang</a>'s
+                    group. I completed my bachelor's at RWTH Aachen University and wrote my thesis with <a
+                        href="https://www.graphics.rwth-aachen.de/person/3/">Leif&nbsp;Kobbelt</a>. <br>
+                    Outside of research, I really enjoy several aspects of coding. I had lots of fun learning about
+                    competitive programming during university and competing as <i>r/wth</i> with my team mates and
+                    friends <a href="https://www.linkedin.com/in/vincent-de-bakker/">Vincent&nbsp;de&nbsp;Bakker</a>,
+                    <a href="https://stats.ioinformatics.org/people/6817">Lennart&nbsp;Ferlemann</a>, and <a
+                        href="https://www.linkedin.com/in/viktor-k%C3%B6rner-676526200">Viktor
+                        K&ouml;rner</a>.
+                    Also, I got the chance to apply my software engineering skills in large projects while interning at
+                    Amazon AGI, Google Gemini, and Optiver D1.
+                </p>
+            </div>
+            <img src="jan.jpg" alt="Jan Ackermann">
+        </div>
+
+        <!-- Lecture Recommendations -->
+        <div class="section">
+            <h2>Lecture Recommendations</h2>
+            I have enjoyed the following lectures and can recommend them to anyone interested in the field. Some are
+            specific to the universities I have attended but others are available online. (Yes, I heard multiple lecture
+            series about the same topics.)
+            <ul>
+                <li><strong>Linear Algebra</strong> - The Linear Algebra lectures by <i>Gilbert&nbsp;Strang</i> are a
+                    must for
+                    anyone interested in machine learning. He spends significant time per topic to build up an unmatched
+                    intuition.
+                </li>
+                <li><strong>Topology & Geometry</strong> - This lecture series by <i>Tadashi&nbsp;Tokieda</i> is one of
+                    my absolute
+                    favorites. Along the way of giving an introduction to the field, he guides you through the beauty of
+                    visual problem solving. Remember to draw pictures!</li>
+                <li><strong>Computer Vision</strong> - My favorite publicly available lecture series about Computer
+                    Vision comes from <i>Andreas&nbsp;Geiger</i>. It gives a good introduction into the field and
+                    touches upon more
+                    recent topics as well.</li>
+                <li><strong>Big Data</strong> - This lecture from <i>Ghislain&nbsp;Fourny</i> at ETH Zurich is just a
+                    pleasure to
+                    follow for anyone interested in Big Data. It covers the core topics for storing, retrieving, and
+                    manipulating large amounts of data.</li>
+                <li><strong>Operations Research</strong> - For me, this was the most fun lecture during my time in
+                    Aachen. <i>Marco&nbsp;L&uuml;bbecke</i> and his team did a great job in combining theory with
+                    practical application of the learned problem modeling techniques. Even the homework was fun!
+                </li>
+            </ul>
+        </div>
+
+        <!-- Computer Setup Section -->
+        <div class="section">
+            <h2>Development Setup</h2>
+            <ul>
+                <li><strong>Text Editor:</strong> Neovim</li>
+                <li><strong>Laptop:</strong> Apple M1 Macbook Pro 16''</li>
+                <li><strong>Keyboard:</strong> Glove 80</li>
+                <li><strong>CPU:</strong> Intel Core i7-13700K</li>
+                <li><strong>GPU:</strong> NVIDIA GeForce RTX 4080</li>
+                <li><strong>RAM:</strong> 64GB DDR5</li>
+                <li><strong>Storage:</strong> Samsung 990 Pro 2TB NVMe SSD</li>
+                <li><strong>Monitor:</strong> 27'' LG Ultragear WQHD Monitor </li>
+                <li><strong>Operating System:</strong> Debian 12</li>
+                <!-- Add more components as needed -->
+            </ul>
+        </div>
+
+        <h2>Publications</h2>
+        <ul class="publications">
+            <li>
+                <p class="paper-title">Do Efficient Transformers Really Save Computation?</p>
+                <p class="tldr">TL;DR: We study the class of Linear and Sparse Transformers in a CoT setting and find
+                    that to keep up with regular Transformers, their hidden dimension needs to scale with the
+                    problem size. On the other hand we identify a simple criterion which allows efficient Transformers
+                    to be more efficient.
+                <p class="conference">ICML, <span class="year">2024</span></p>
+                <p class="authors">Kai Yang, <b>Jan Ackermann</b>, Zhenyu He, Guhao Feng, Bohang Zhang, Yunzhen Feng,
+                    Qiwei Ye, Di He, Liwei Wang</p>
+                <a href="https://icml.cc/virtual/2024/poster/32716" target="_blank">Paper</a>
+            </li>
+            <li>
+                <p class="paper-title">Maskomaly: Zero-shot Mask Anomaly Segmentation</p>
+                <p class="tldr">TL;DR: We show that pretrained Mask-based segmentation models can predict anomalies
+                    without further tuning. Additionally, we introduce a metric for anomaly segmentation that favors
+                    models with confident predictions.</p>
+                <p class="conference">BMVC, <span class="year">2023 </span> <span class="highlight">(oral)</span></p>
+                <p class="authors"><b>Jan Ackermann</b>, Christos Sakaridis, Fisher Yu</p>
+                <a href="https://proceedings.bmvc2023.org/329/" target="_blank">Paper</a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+
+        document.getElementById("darkModeToggle").addEventListener("click", toggleDarkMode);
+    </script>
+
+</body>
+
+</html>
