@@ -1,11 +1,11 @@
 .dark-mode {
-    background-color: #121212;
+    background-color: #1e1e1e;
     color: #e0e0e0;
 }
 
 body {
     font-family: 'Open Sans', Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #fff;
     margin: 0;
     padding: 0;
     color: #333;
@@ -13,7 +13,7 @@ body {
 }
 
 .dark-mode body {
-    background-color: #121212;
+    background-color: #1e1e1e;
     color: #e0e0e0;
 }
 
@@ -27,19 +27,19 @@ body {
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    /* Removed box-shadow for seamless transition */
 }
 
 .dark-mode .container {
     background-color: #1e1e1e;
     color: #e0e0e0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Removed box-shadow for seamless transition */
 }
 
 /* Navbar styles */
 .navbar {
     background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    /* Removed box-shadow for seamless transition */
     padding: 10px 0;
     position: sticky;
     top: 0;
@@ -48,7 +48,7 @@ body {
 
 .dark-mode .navbar {
     background-color: #1e1e1e;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    /* Removed box-shadow for seamless transition */
 }
 
 .nav-container {
