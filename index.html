@@ -15,40 +15,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Jan Ackermann - Researcher in Vision, Graphics, and Deep Learning">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="stylesheet" href="style.css">
-    <title>Jan Ackermann</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Jan Ackermann | Research & Engineering</title>
 </head>
 
 <body>
-    <button class="dark-mode-toggle" id="darkModeToggle">Toggle Dark Mode</button>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <button class="dark-mode-toggle" id="darkModeToggle"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
-        <div class="header">
+        <div class="header" id="about">
             <div class="bio-text">
                 <h1>Jan Ackermann</h1>
-                <div class="email-row">
-                    <p class="email">Email: first.last [at] hotmail.com</p>
+                <!-- <div class="subtitle">Vision • Graphics • Deep Learning</div> -->
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> first.last [at] hotmail.com</p>
+                    <div class="social-links">
+                        <a href="https://github.com/jan-ackermann" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <!-- <a href="https://scholar.google.com/" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a> -->
+                        <a href="https://www.linkedin.com/in/jan-ackermann/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
-                <p class="bio">Hello there! I am a master's student at <i>ETH Zurich</i>, specializing in the
-                    intersection of <i>Vision</i>, <i>Graphics</i>, and <i>Deep Learning</i>.
-                    Soon, I will be joining <i>Google&nbsp;Deepmind</i> as an engineer.
-
+                <p class="bio">
+                    Hello there! I am a master's student at <span class="emphasis">ETH Zurich</span>, specializing in the
+                    intersection of <span class="emphasis">Vision</span>, <span class="emphasis">Graphics</span>, and <span class="emphasis">Deep Learning</span>.
+                    Soon, I will be joining <span class="emphasis">Google&nbsp;Deepmind</span> as an engineer.
+                </p>
+                <p class="bio">
                     Currently, I have the privilege of visiting <a href="https://stanford.edu/~gordonwz/">
-                        Gordon&nbsp;Wetzstein</a>'s lab at <i>Stanford University</i>, where I am fortunate to be
-                    supervised by <a href="https://www.guandaoyang.com/">Guandao&nbsp;Yang</a>.<br>
-
-                    Prior to this, I completed an internship at <i>Google</i> with <a
+                        Gordon&nbsp;Wetzstein</a>'s lab at <span class="emphasis">Stanford University</span>, where I am fortunate to be
+                    supervised by <a href="https://www.guandaoyang.com/">Guandao&nbsp;Yang</a>.
+                </p>
+                <p class="bio">
+                    Prior to this, I completed an internship at <span class="emphasis">Google</span> with <a
                         href="https://thabobeeler.com/">Thabo&nbsp;Beeler</a>'s group and spent time as a visiting
-                    student at <i>Peking University</i>, working under <a
-                        href="http://www.liweiwang-pku.com/">Liwei&nbsp;Wang</a>. At <i>ETH Zurich</i>, I completed one
+                    student at <span class="emphasis">Peking University</span>, working under <a
+                        href="http://www.liweiwang-pku.com/">Liwei&nbsp;Wang</a>. At <span class="emphasis">ETH Zurich</span>, I completed one
                     semester thesis with <a href="https://people.ee.ethz.ch/~csakarid/">Christos Sakaridis</a>
                     and another with <a href="https://pengsongyou.github.io/">Songyou&nbsp;Peng</a>. I earned
-                    my bachelor's degree from <i>RWTH Aachen University</i>, where I wrote my bachelor's thesis under
-                    the guidance of <a href="https://www.graphics.rwth-aachen.de/person/3/">Leif&nbsp;Kobbelt</a>.<br>
-
+                    my bachelor's degree from <span class="emphasis">RWTH Aachen University</span>, where I wrote my bachelor's thesis under
+                    the guidance of <a href="https://www.graphics.rwth-aachen.de/person/3/">Leif&nbsp;Kobbelt</a>.
+                </p>
+                <p class="bio">
                     Outside of research (but still cs), I really enjoy coding. During university, I had a great time
                     exploring competitive programming, competing alongside my friends <a
                         href="https://www.linkedin.com/in/vincent-de-bakker/">Vincent&nbsp;de&nbsp;Bakker</a>,
@@ -56,75 +76,96 @@
                         href="https://www.linkedin.com/in/viktor-k%C3%B6rner-676526200">Viktor K&ouml;rner</a> as
                     team ''r/wth''.
                     I have also had the opportunity to apply my software engineering skills in large-scale projects
-                    during internships at <i>Amazon AGI</i>, <i>Google Gemini</i>, and <i>Optiver D1</i>.
+                    during internships at <span class="emphasis">Amazon AGI</span>, <span class="emphasis">Google Gemini</span>, and <span class="emphasis">Optiver D1</span>.
                 </p>
             </div>
-            <img src="assets/jan.jpg" alt="Jan Ackermann">
+            <div class="profile-image-container">
+                <img src="assets/jan.jpg" alt="Jan Ackermann" class="profile-image">
+            </div>
         </div>
 
+        <h2 id="publications">Publications</h2>
+        <div class="publications-grid">
+            <div class="publication-card">
+                <div class="publication-content">
+                    <h3 class="paper-title">CL-Splats: Continual Learning of Gaussian Splatting with Local Optimization</h3>
+                    <p class="authors"><b>Jan Ackermann</b>, Jonas Kulhanek, Shengqu Cai, Haofei Xu, Marc Pollefeys, Gordon
+                        Wetzstein, Leonidas Guibas, Songyou Peng</p>
+                    <p class="conference">Under Review</p>
+                    <div class="paper-description">
+                        <p class="tldr"><span class="tldr-label">TL;DR:</span> We explore how to adapt an existing 3DGS scene representation to new inceremental
+                            changes. We propose a novel and efficient way to identify changed regions and then to locally
+                            optimize them. This not only produces more accurate scene updates but also enables new applications.
+                        </p>
+                    </div>
+                    <div class="paper-links">
+                        <a href="https://jan-ackermann.github.io/cl-splats/" target="_blank" class="paper-link"><i class="fas fa-globe"></i> Website</a>
+                    </div>
+                </div>
+            </div>
 
-        <h2>Publications</h2>
-        <ul class="publications">
-            <li>
-                <p class="paper-title">CL-Splats: Continual Learning of Gaussian Splatting with Local Optimization</p>
-                <p class="tldr">TL;DR: We explore how to adapt an existing 3DGS scene representation to new inceremental
-                    changes. We propose a novel and efficient way to identify changed regions and then to locally
-                    optimize them.
-                    This not only produces more accurate scene updates but also enables new applications.
-                </p>
-                <p class="conference">Under Review</p>
-                <p class="authors"><b>Jan Ackermann</b>, Jonas Kulhanek, Shengqu Cai, Haofei Xu, Marc Pollefeys, Gordon
-                    Wetzstein, Leonidas Guibas, Songyou Peng</p>
-                <a href="https://jan-ackermann.github.io/cl-splats/" target="_blank">Website</a>
-            </li>
-            <li>
-                <p class="paper-title">AIpparel: A Large Multimodal Generative Model for Digital Garments</p>
-                <p class="tldr">TL;DR: We introduce AIpparel, the first large-scale multimodal generative model designed
-                    specifically for digital garments. By extending LLaVA to incorporate a new garment modality,
-                    AIpparel enables the creation of sewing patterns from text, image, and garment inputs. Our
-                    novel tokenization scheme supports the generation of complex patterns beyond the capabilities
-                    of previous approaches, while the dedicated garment modality facilitates seamless iteration on
-                    garment designs.
-                    <p class="conference">Computer Vision and Pattern Recognition (CVPR), <span class="year">2025 </span></p>
-                <p class="authors">Kiyohiro Nakayama*, <b>Jan Ackermann*</b>, Timur L. Kesdogan*, Yang Zheng, Maria
-                    Korosteleva, Olga Sorkine-Hornung,
-                    Leonidas Guibas, Guandao Yang, Gordon Wetzstein</p>
-                <a href="https://arxiv.org/abs/2412.03937" target="_blank">Arxiv</a> |
-                <a href="https://georgenakayama.github.io/AIpparel/" target="_blank">Website</a>
-            </li>
-            <li>
-                <p class="paper-title">Do Efficient Transformers Really Save Computation?</p>
-                <p class="tldr">TL;DR: We explore the class of Linear and Sparse Transformers in a Chain-of-Thought
-                    (CoT) setting, finding that to match the performance of regular Transformers, their hidden
-                    dimensions must scale with the problem size. However, we also identify a simple criterion that
-                    enables efficient Transformers to operate even more effectively.
-                <p class="conference">International Conference on Machine Learning (ICML), <span
-                        class="year">2024</span></p>
-                <p class="authors">Kai Yang, <b>Jan Ackermann</b>, Zhenyu He, Guhao Feng, Bohang Zhang, Yunzhen Feng,
-                    Qiwei Ye, Di He, Liwei Wang</p>
-                <a href="https://icml.cc/virtual/2024/poster/32716" target="_blank">Paper</a> |
-                <a href="https://arxiv.org/abs/2402.13934" target="_blank">Arxiv</a>
-            </li>
-            <li>
-                <p class="paper-title">Maskomaly: Zero-shot Mask Anomaly Segmentation</p>
-                <p class="tldr">TL;DR: We show that pretrained Mask-based segmentation models can predict anomalies
-                    without further tuning. Additionally, we introduce a metric for anomaly segmentation that favors
-                    models with confident predictions.</p>
-                <p class="conference">British Machine Vision Conference (BMVC), <span class="year">2023 </span> <span
-                        class="highlight">(oral)</span></p>
-                <p class="authors"><b>Jan Ackermann</b>, Christos Sakaridis, Fisher Yu</p>
-                <a href="https://proceedings.bmvc2023.org/329/" target="_blank">Paper</a> |
-                <a href="https://arxiv.org/abs/2305.16972" target="_blank">Arxiv</a>
+            <div class="publication-card">
+                <div class="publication-content">
+                    <h3 class="paper-title">AIpparel: A Large Multimodal Generative Model for Digital Garments</h3>
+                    <p class="authors">Kiyohiro Nakayama*, <b>Jan Ackermann*</b>, Timur L. Kesdogan*, Yang Zheng, Maria
+                        Korosteleva, Olga Sorkine-Hornung, Leonidas Guibas, Guandao Yang, Gordon Wetzstein</p>
+                    <p class="conference">Computer Vision and Pattern Recognition (CVPR), <span class="year">2025</span></p>
+                    <div class="paper-description">
+                        <p class="tldr"><span class="tldr-label">TL;DR:</span> We introduce AIpparel, the first large-scale multimodal generative model designed
+                            specifically for digital garments. By extending LLaVA to incorporate a new garment modality,
+                            AIpparel enables the creation of sewing patterns from text, image, and garment inputs.</p>
+                    </div>
+                    <div class="paper-links">
+                        <a href="https://arxiv.org/abs/2412.03937" target="_blank" class="paper-link"><i class="fas fa-file-pdf"></i> Arxiv</a>
+                        <a href="https://georgenakayama.github.io/AIpparel/" target="_blank" class="paper-link"><i class="fas fa-globe"></i> Website</a>
+                    </div>
+                </div>
+            </div>
 
-            </li>
-        </ul>
+            <div class="publication-card">
+                <div class="publication-content">
+                    <h3 class="paper-title">Do Efficient Transformers Really Save Computation?</h3>
+                    <p class="authors">Kai Yang, <b>Jan Ackermann</b>, Zhenyu He, Guhao Feng, Bohang Zhang, Yunzhen Feng,
+                        Qiwei Ye, Di He, Liwei Wang</p>
+                    <p class="conference">International Conference on Machine Learning (ICML), <span class="year">2024</span></p>
+                    <div class="paper-description">
+                        <p class="tldr"><span class="tldr-label">TL;DR:</span> We explore the class of Linear and Sparse Transformers in a Chain-of-Thought
+                            (CoT) setting, finding that to match the performance of regular Transformers, their hidden
+                            dimensions must scale with the problem size.</p>
+                    </div>
+                    <div class="paper-links">
+                        <a href="https://icml.cc/virtual/2024/poster/32716" target="_blank" class="paper-link"><i class="fas fa-file-pdf"></i> Paper</a>
+                        <a href="https://arxiv.org/abs/2402.13934" target="_blank" class="paper-link"><i class="fas fa-file-alt"></i> Arxiv</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication-card">
+                <div class="publication-content">
+                    <h3 class="paper-title">Maskomaly: Zero-shot Mask Anomaly Segmentation</h3>
+                    <p class="authors"><b>Jan Ackermann</b>, Christos Sakaridis, Fisher Yu</p>
+                    <p class="conference">British Machine Vision Conference (BMVC), <span class="year">2023</span> <span class="badge">Oral</span></p>
+                    <div class="paper-description">
+                        <p class="tldr"><span class="tldr-label">TL;DR:</span> We show that pretrained Mask-based segmentation models can predict anomalies
+                            without further tuning. Additionally, we introduce a metric for anomaly segmentation that favors
+                            models with confident predictions.</p>
+                    </div>
+                    <div class="paper-links">
+                        <a href="https://proceedings.bmvc2023.org/329/" target="_blank" class="paper-link"><i class="fas fa-file-pdf"></i> Paper</a>
+                        <a href="https://arxiv.org/abs/2305.16972" target="_blank" class="paper-link"><i class="fas fa-file-alt"></i> Arxiv</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
     <footer>
-        <p>&copy; <span id="current-year"></span> Jan Ackermann | Last updated 02/2025</p>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> Jan Ackermann | Last updated 02/2025</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 
 </html>
