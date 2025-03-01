@@ -19,6 +19,6 @@ I am a master's student at **ETH Zurich**, specializing in the intersection of *
 
 ## Contact 📫
 - 📧 first.last [at] hotmail.com
-- 🔗 [GitHub](https://github.com/jan-ackermann)
+- 🌐 [Website](https://jan-ackermann.github.io/)
 - 🔗 [LinkedIn](https://www.linkedin.com/in/jan-ackermann/)
 - 🔗 [Twitter/X](https://x.com/jan_on_x)
