@@ -104,13 +104,9 @@ h2 {
 
 /* Emphasis class for highlighting text */
 .emphasis {
-    font-style: italic;
-    color: #0066cc;
+    font-weight: bold;
 }
 
-.dark-mode .emphasis {
-    color: #4d9fff;
-}
 
 /* Header section */
 .header {
