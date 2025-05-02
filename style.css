@@ -102,6 +102,25 @@ h2 {
     font-size: 1.05em;
 }
 
+.bio a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.bio a:hover {
+    color: #6aa9f0;
+    text-decoration: underline;
+}
+
+.dark-mode .bio a {
+    color: #78b0f9;
+}
+
+.dark-mode .bio a:hover {
+    color: #9ac5fa;
+}
+
 /* Emphasis class for highlighting text */
 .emphasis {
     font-weight: bold;
