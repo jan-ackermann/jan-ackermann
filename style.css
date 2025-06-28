@@ -473,3 +473,12 @@ footer {
         margin-bottom: 5px;
     }
 }
+.mentored-students-list {
+    margin: 1em 0 2em 1.5em;
+    padding: 0;
+    list-style-type: disc;
+}
+.mentored-students-list li {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+}
