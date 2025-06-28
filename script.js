@@ -36,6 +36,21 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e =
     }
 });
 
-window.addEventListener('DOMContentLoaded', setInitialTheme);
-document.getElementById("darkModeToggle").addEventListener("click", toggleDarkMode);
-document.getElementById("current-year").textContent = new Date().getFullYear();
+function loadSection(containerId, file) {
+    fetch(file)
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById(containerId).innerHTML = html;
+        })
+        .catch(err => console.error('Error loading', file, err));
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    setInitialTheme();
+    loadSection('about-container', 'about.html');
+    loadSection('news-container', 'news.html');
+    loadSection('publications-container', 'publications.html');
+    loadSection('mentoring-container', 'mentoring.html');
+    document.getElementById("darkModeToggle").addEventListener("click", toggleDarkMode);
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+});
