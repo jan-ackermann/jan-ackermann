@@ -1,9 +1,10 @@
 # Jan Ackermann 👋
 
 ## About Me 🧑‍🎓
-I am a master's student at **ETH Zurich**, specializing in the intersection of **Vision**, **Graphics**, and **Deep Learning**. Soon, I will be joining **Google Deepmind** as an engineer.
+Hello! I’m an engineer at Google DeepMind, where I work on post-training for the Gemini models.
+However, my expertise lies in the intersection of **Vision**, **Graphics**, and **Deep Learning**.
 
-- 🏫 Currently visiting **Stanford University** in Gordon Wetzstein's lab, supervised by Guandao Yang
+- 🏫 Previously, I was visiting **Stanford University** in Gordon Wetzstein's lab, supervised by Guandao Yang
 - 🌏 Spent time as a visiting student at **Peking University** with Liwei Wang
 - 🎓 Completed my bachelor's at **RWTH Aachen University** with Leif Kobbelt
 
@@ -18,7 +19,7 @@ I am a master's student at **ETH Zurich**, specializing in the intersection of *
 - 💻 Competitive programming with team "r/wth"
 
 ## Contact 📫
-- 📧 first.last [at] hotmail.com
+- 📧 [first] [last] [at] google.com
 - 🌐 [Website](https://jan-ackermann.github.io/)
 - 🔗 [LinkedIn](https://www.linkedin.com/in/jan-ackermann/)
 - 🔗 [Twitter/X](https://x.com/jan_on_x)
