@@ -16,9 +16,6 @@ function setInitialTheme() {
     } else if (savedPreference === "disabled") {
         document.body.classList.remove("dark-mode");
     } else {
-        console.log("No theme preference found in local storage.");
-        console.log(window.matchMedia)
-        console.log(window.matchMedia('(prefers-color-scheme: dark)').matches);
         if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             document.body.classList.add("dark-mode");
         }
