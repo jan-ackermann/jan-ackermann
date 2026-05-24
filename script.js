@@ -36,3 +36,24 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e =
 window.addEventListener('DOMContentLoaded', setInitialTheme);
 document.getElementById("darkModeToggle").addEventListener("click", toggleDarkMode);
 document.getElementById("current-year").textContent = new Date().getFullYear();
+
+function collapseOlderNews(visibleCount = 5) {
+    const newsList = document.querySelector(".news-list");
+    if (!newsList) return;
+
+    const items = [...newsList.querySelectorAll(".news-item")];
+    if (items.length <= visibleCount) return;
+
+    const details = document.createElement("details");
+    details.className = "news-archive";
+
+    const hiddenCount = items.length - visibleCount;
+    const summary = document.createElement("summary");
+    summary.textContent = `Show ${hiddenCount} older update${hiddenCount === 1 ? "" : "s"}`;
+    details.appendChild(summary);
+
+    items.slice(visibleCount).forEach((item) => details.appendChild(item));
+    newsList.appendChild(details);
+}
+
+collapseOlderNews();

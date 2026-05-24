@@ -215,6 +215,42 @@ h2 {
     color: #aaa;
 }
 
+.news-archive {
+    margin-top: 0;
+}
+
+.news-archive summary {
+    cursor: pointer;
+    color: #666;
+    font-weight: 600;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.news-archive summary::-webkit-details-marker {
+    display: none;
+}
+
+.news-archive summary::before {
+    content: "▸ ";
+}
+
+.news-archive[open] summary::before {
+    content: "▾ ";
+}
+
+.news-archive summary:hover {
+    color: #0066cc;
+}
+
+.dark-mode .news-archive summary {
+    color: #aaa;
+}
+
+.dark-mode .news-archive summary:hover {
+    color: #4d9fff;
+}
+
 /* Publications section */
 .publications-grid {
     display: grid;
