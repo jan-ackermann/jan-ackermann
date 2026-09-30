@@ -1,7 +1,7 @@
 # Jan Ackermann 👋
 
 ## About Me 🧑‍🎓
-Hello! I’m an engineer at Google DeepMind, where I work on post-training for the Gemini models.
+Hello! I’m an engineer at Google DeepMind, where I work on post-training for the Gemini models. I was a core contributor to Gemini 3 through Gemini 4.
 However, my expertise lies in the intersection of **Vision**, **Graphics**, and **Deep Learning**.
 
 - 🏫 Previously, I was visiting **Stanford University** in Gordon Wetzstein's lab, supervised by Guandao Yang
@@ -19,7 +19,7 @@ However, my expertise lies in the intersection of **Vision**, **Graphics**, and 
 - 💻 Competitive programming with team "r/wth"
 
 ## Contact 📫
-- 📧 [first] [last] [at] google.com
+- 📧 [first].[last] [at] cs.stanford.edu
 - 🌐 [Website](https://jan-ackermann.github.io/)
 - 🔗 [LinkedIn](https://www.linkedin.com/in/jan-ackermann/)
 - 🔗 [Twitter/X](https://x.com/jan_on_x)
