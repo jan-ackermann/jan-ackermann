@@ -1,41 +1,57 @@
+const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+let savedPreference;
+
+try {
+    savedPreference = localStorage.getItem("darkMode");
+} catch {
+    // Theme switching still works when browser storage is unavailable.
+}
+
+function syncThemeToggle() {
+    const toggle = document.getElementById("darkModeToggle");
+    if (!toggle) return;
+
+    const isDark = document.documentElement.classList.contains("dark-mode");
+    const label = isDark ? "Switch to light mode" : "Switch to dark mode";
+    const icon = toggle.querySelector("i");
+    icon.classList.toggle("fa-sun", isDark);
+    icon.classList.toggle("fa-moon", !isDark);
+    toggle.setAttribute("aria-label", label);
+    toggle.setAttribute("title", label);
+}
+
+function applyTheme(isDark) {
+    document.documentElement.classList.toggle("dark-mode", isDark);
+    syncThemeToggle();
+}
+
 function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
-
-    if (document.body.classList.contains("dark-mode")) {
-        localStorage.setItem("darkMode", "enabled");
-    } else {
-        localStorage.setItem("darkMode", "disabled");
+    const isDark = !document.documentElement.classList.contains("dark-mode");
+    applyTheme(isDark);
+    savedPreference = isDark ? "enabled" : "disabled";
+    try {
+        localStorage.setItem("darkMode", savedPreference);
+    } catch {
+        // Keep the chosen theme for this visit even without persistent storage.
     }
 }
 
-function setInitialTheme() {
-    const savedPreference = localStorage.getItem("darkMode");
+// Run in the head so the theme is applied before the page is first painted.
+applyTheme(savedPreference === "enabled" ||
+    (savedPreference !== "disabled" && systemTheme.matches));
 
-    if (savedPreference === "enabled") {
-        document.body.classList.add("dark-mode");
-    } else if (savedPreference === "disabled") {
-        document.body.classList.remove("dark-mode");
-    } else {
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.body.classList.add("dark-mode");
-        }
-    }
-}
-
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    const savedPreference = localStorage.getItem("darkMode");
+systemTheme.addEventListener('change', e => {
     if (savedPreference !== "enabled" && savedPreference !== "disabled") {
-        if (e.matches) {
-            document.body.classList.add("dark-mode");
-        } else {
-            document.body.classList.remove("dark-mode");
-        }
+        applyTheme(e.matches);
     }
 });
 
-window.addEventListener('DOMContentLoaded', setInitialTheme);
-document.getElementById("darkModeToggle").addEventListener("click", toggleDarkMode);
-document.getElementById("current-year").textContent = new Date().getFullYear();
+window.addEventListener('DOMContentLoaded', () => {
+    syncThemeToggle();
+    document.getElementById("darkModeToggle").addEventListener("click", toggleDarkMode);
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+    collapseOlderNews();
+});
 
 function collapseOlderNews(visibleCount = 5) {
     const newsList = document.querySelector(".news-list");
@@ -55,5 +71,3 @@ function collapseOlderNews(visibleCount = 5) {
     items.slice(visibleCount).forEach((item) => details.appendChild(item));
     newsList.appendChild(details);
 }
-
-collapseOlderNews();
