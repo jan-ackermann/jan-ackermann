@@ -1,0 +1,620 @@
+{
+  "note": "Thumbnails extracted from arXiv source figures. Some comparative thumbnails recompose selected source panels with readable labels; original image content and callouts are retained. Fitting does not stretch images. Normalized crop coordinates use the rendered figure and an upper-left origin.",
+  "thumbnails": [
+    {
+      "slug": "fluidgen",
+      "arxiv": "2610.25660",
+      "source": "Fig/teaser.pdf",
+      "crop": [
+        0.807,
+        0.003,
+        0.192,
+        0.994
+      ],
+      "fit": "cover",
+      "gravity": "North",
+      "description": "Smoke dragon from the FluidGen teaser",
+      "alt": "FluidGen smoke shaped into a dragon in a candlelit room",
+      "arxiv_source_url": "https://arxiv.org/src/2610.25660",
+      "retrieved_utc_date": "2026-10-26",
+      "source_archive_sha256": "c70879114b02819e3888de34b4c2a8c5d26c2c149d361826f7b511884c844b26",
+      "figure_sha256": "048c00b93e5f874eecd287b08223349ff5ade585f64414c6085572a6b076a37b",
+      "rendered_dimensions": [
+        3200,
+        574
+      ],
+      "render_density_dpi": 150,
+      "output": "fluidgen.webp",
+      "output_dimensions": [
+        1040,
+        780
+      ],
+      "image_processing": [
+        "-crop",
+        "614x571+2582+2",
+        "+repage",
+        "-filter",
+        "Lanczos",
+        "-resize",
+        "1040x780^",
+        "-gravity",
+        "North",
+        "-background",
+        "white",
+        "-extent",
+        "1040x780"
+      ]
+    },
+    {
+      "slug": "lot-diffusion",
+      "density": 400,
+      "arxiv": "2610.05816",
+      "source": "figures/teaser.pdf",
+      "crop": [
+        0.528,
+        0.034,
+        0.47,
+        0.467
+      ],
+      "fit": "contain",
+      "description": "Generated LoT artwork from the upper-right teaser panel",
+      "alt": "LoT Diffusion generated artwork with a spiral and regions of varying detail",
+      "arxiv_source_url": "https://arxiv.org/src/2610.05816",
+      "retrieved_utc_date": "2026-10-26",
+      "source_archive_sha256": "2687ba7eeef8b028dca86e42206a1ff75c07e2a44445c3faa54cff41c3a7bc6c",
+      "figure_sha256": "b08fd0f7362aa84026f56d0932bd43545d48bf25299c738e9c407ff18fef36b8",
+      "rendered_dimensions": [
+        2655,
+        2339
+      ],
+      "render_density_dpi": 400,
+      "output": "lot-diffusion.webp",
+      "output_dimensions": [
+        1040,
+        780
+      ],
+      "image_processing": [
+        "-crop",
+        "1248x1092+1402+80",
+        "+repage",
+        "-filter",
+        "Lanczos",
+        "-resize",
+        "1040x780",
+        "-gravity",
+        "Center",
+        "-background",
+        "white",
+        "-extent",
+        "1040x780"
+      ]
+    },
+    {
+      "slug": "asymflow",
+      "arxiv": "2605.12964",
+      "source": "figures/teaser.pdf",
+      "trim": true,
+      "fit": "contain",
+      "description": "Complete AsymFlow generated-image collage with outer whitespace trimmed",
+      "alt": "AsymFlow generated images including a newspaper, cat orchestra, and portrait",
+      "arxiv_source_url": "https://arxiv.org/src/2605.12964",
+      "retrieved_utc_date": "2026-10-26",
+      "source_archive_sha256": "52c715e960f593cb6da5d3cfb58c66cc19d21ced0f4c7a62a90c25194bdc5089",
+      "figure_sha256": "3643033557aa74b98e9f3972fc1489559ae7533e5112b82933def229729c2a37",
+      "rendered_dimensions": [
+        2953,
+        2362
+      ],
+      "render_density_dpi": 150,
+      "output": "asymflow.webp",
+      "output_dimensions": [
+        1040,
+        780
+      ],
+      "image_processing": [
+        "-fuzz",
+        "1%",
+        "-trim",
+        "+repage",
+        "-filter",
+        "Lanczos",
+        "-resize",
+        "1040x780",
+        "-gravity",
+        "Center",
+        "-background",
+        "white",
+        "-extent",
+        "1040x780"
+      ]
+    },
+    {
+      "slug": "foveated-imaging",
+      "density": 600,
+      "arxiv": "2606.02565",
+      "source": "qual_pipeline.pdf",
+      "crop": [
+        0.668,
+        0.13,
+        0.33,
+        0.87
+      ],
+      "fit": "cover",
+      "gravity": "East",
+      "description": "Scanpath selection and high-resolution inset from the qualitative soccer pipeline",
+      "alt": "Foveated soccer image with selected sampling regions and a magnified inset",
+      "arxiv_source_url": "https://arxiv.org/src/2606.02565",
+      "retrieved_utc_date": "2026-10-26",
+      "source_archive_sha256": "cd01416948d156a79883207ca6b113619251155344e41f5d91fb4b7570c2855d",
+      "figure_sha256": "2f98caa9fdd4ea444b8cda0f2b96a8bc5f992c08391fec40fcf6c3e0874a8809",
+      "rendered_dimensions": [
+        3200,
+        668
+      ],
+      "render_density_dpi": 600,
+      "output": "foveated-imaging.webp",
+      "output_dimensions": [
+        1040,
+        780
+      ],
+      "image_processing": [
+        "-crop",
+        "1056x581+2138+87",
+        "+repage",
+        "-filter",
+        "Lanczos",
+        "-resize",
+        "1040x780^",
+        "-gravity",
+        "East",
+        "-background",
+        "white",
+        "-extent",
+        "1040x780"
+      ]
+    },
+    {
+      "slug": "geoflow",
+      "arxiv": "2605.18365",
+      "source": "00003.pdf",
+      "original_source": "images/eccv_qual4.pdf",
+      "fit": "comparison-panels",
+      "description": "Earlier and later frames from the source car comparison. Top row: base-model car loses structural consistency. Bottom row: GeoFlow car stays coherent. Original red failure callout retained; panels relabeled and arranged for thumbnail readability.",
+      "alt": "Earlier and later video frames compare a distorted base-model car with GeoFlow maintaining a coherent car",
+      "arxiv_source_url": "https://arxiv.org/src/2605.18365",
+      "retrieved_utc_date": "2026-10-26",
+      "source_archive_sha256": "e740bbb0eaeb40283541e04b2a77d1d8f20ae378e28204b0f6e7ad46bb303444",
+      "figure_sha256": "faa65ebd2201a50d374db4c058ce06a545715687d5c3705b42e514ce4358ec07",
+      "rendered_dimensions": [
+        4578,
+        6317
+      ],
+      "render_density_dpi": 400,
+      "output": "geoflow.webp",
+      "output_dimensions": [
+        1040,
+        780
+      ],
+      "panels": [
+        {
+          "name": "base-earlier",
+          "crop": [
+            0.04294478527607362,
+            0.10222222222222223,
+            0.23542944785276074,
+            0.09555555555555556
+          ],
+          "destination": [
+            20,
+            126,
+            490,
+            274
+          ],
+          "source_crop_pixels": [
+            197,
+            646,
+            1078,
+            604
+          ]
+        },
+        {
+          "name": "base-later",
+          "crop": [
+            0.5214723926380368,
+            0.10222222222222223,
+            0.2338957055214724,
+            0.09555555555555556
+          ],
+          "destination": [
+            530,
+            126,
+            490,
+            274
+          ],
+          "source_crop_pixels": [
+            2387,
+            646,
+            1071,
+            604
+          ]
+        },
+        {
+          "name": "geoflow-earlier",
+          "crop": [
+            0.04294478527607362,
+            0.0011111111111111111,
+            0.23542944785276074,
+            0.09777777777777778
+          ],
+          "destination": [
+            20,
+            482,
+            490,
+            282
+          ],
+          "source_crop_pixels": [
+            197,
+            7,
+            1078,
+            618
+          ]
+        },
+        {
+          "name": "geoflow-later",
+          "crop": [
+            0.5214723926380368,
+            0.0011111111111111111,
+            0.2338957055214724,
+            0.09777777777777778
+          ],
+          "destination": [
+            530,
+            482,
+            490,
+            282
+          ],
+          "source_crop_pixels": [
+            2387,
+            7,
+            1071,
+            618
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "value": "Earlier",
+          "x": 265,
+          "y": 44,
+          "center": true
+        },
+        {
+          "value": "Later",
+          "x": 775,
+          "y": 44,
+          "center": true
+        },
+        {
+          "value": "Base model",
+          "x": 20,
+          "y": 104
+        },
+        {
+          "value": "GeoFlow",
+          "x": 20,
+          "y": 460
+        }
+      ],
+      "composition_note": "Selected panels retain original image pixels and callouts. Only layout and labels are changed; no generated or retouched scientific content."
+    },
+    {
+      "slug": "bullettime",
+      "arxiv": "2512.05076",
+      "source": "Figures/results/teaser_1113.pdf",
+      "crop": [
+        0.289,
+        0.524,
+        0.356,
+        0.476
+      ],
+      "fit": "contain",
+      "description": "Four generated frames showing two camera trajectories in the soccer teaser",
+      "alt": "BulletTime generated soccer frames showing different camera views and times",
+      "arxiv_source_url": "https://arxiv.org/src/2512.05076",
+      "retrieved_utc_date": "2026-10-26",
+      "source_archive_sha256": "6d3e22ae2ac66c22d5836c5c0067b76dac9347774c3f93d27faf9efcb89b005d",
+      "figure_sha256": "f659f2d5487c2c3e772b64e745d2efc7197607ae9243be8db46e6a57baa24ca2",
+      "rendered_dimensions": [
+        3200,
+        1485
+      ],
+      "render_density_dpi": 150,
+      "output": "bullettime.webp",
+      "output_dimensions": [
+        1040,
+        780
+      ],
+      "image_processing": [
+        "-crop",
+        "1139x707+925+778",
+        "+repage",
+        "-filter",
+        "Lanczos",
+        "-resize",
+        "1040x780",
+        "-gravity",
+        "Center",
+        "-background",
+        "white",
+        "-extent",
+        "1040x780"
+      ]
+    },
+    {
+      "slug": "cl-splats",
+      "arxiv": "2506.21117",
+      "source": "00111.pdf",
+      "original_source": "images/sup/multi-day.pdf",
+      "fit": "comparison-panels",
+      "description": "Four successive CL-Splats scene states: remove the computer, add a bear, and replace the lamp with a piggy bank. Original red change callouts retained; panels relabeled and arranged for thumbnail readability.",
+      "alt": "CL-Splats updates the same 3D scene: a computer is removed, a bear is added, and a lamp is replaced with a piggy bank",
+      "arxiv_source_url": "https://arxiv.org/src/2506.21117",
+      "retrieved_utc_date": "2026-10-26",
+      "source_archive_sha256": "d3f7d6d905e71bc5f9bae4434910f82c36b2f17badccfbc8207099a9cd739909",
+      "figure_sha256": "c0aa08fc8c54078714965b6943af658b927acdd47280546c670cbc5a27433a8d",
+      "rendered_dimensions": [
+        2050,
+        903
+      ],
+      "render_density_dpi": 180,
+      "output": "cl-splats.webp",
+      "output_dimensions": [
+        1040,
+        780
+      ],
+      "panels": [
+        {
+          "name": "initial",
+          "crop": [
+            0.005,
+            0.002840909090909091,
+            0.36375,
+            0.4190340909090909
+          ],
+          "destination": [
+            20,
+            80,
+            490,
+            280
+          ],
+          "source_crop_pixels": [
+            10,
+            3,
+            746,
+            378
+          ]
+        },
+        {
+          "name": "remove-computer",
+          "crop": [
+            0.37125,
+            0.002840909090909091,
+            0.3625,
+            0.4190340909090909
+          ],
+          "destination": [
+            530,
+            80,
+            490,
+            280
+          ],
+          "source_crop_pixels": [
+            761,
+            3,
+            743,
+            378
+          ]
+        },
+        {
+          "name": "add-bear",
+          "crop": [
+            0.005,
+            0.4971590909090909,
+            0.36375,
+            0.40482954545454547
+          ],
+          "destination": [
+            20,
+            470,
+            490,
+            280
+          ],
+          "source_crop_pixels": [
+            10,
+            449,
+            746,
+            366
+          ]
+        },
+        {
+          "name": "replace-lamp",
+          "crop": [
+            0.37125,
+            0.4971590909090909,
+            0.3625,
+            0.40482954545454547
+          ],
+          "destination": [
+            530,
+            470,
+            490,
+            280
+          ],
+          "source_crop_pixels": [
+            761,
+            449,
+            743,
+            366
+          ]
+        }
+      ],
+      "labels": [
+        {
+          "value": "Initial scene",
+          "x": 265,
+          "y": 54,
+          "center": true
+        },
+        {
+          "value": "Remove computer",
+          "x": 775,
+          "y": 54,
+          "center": true
+        },
+        {
+          "value": "Add bear",
+          "x": 265,
+          "y": 444,
+          "center": true
+        },
+        {
+          "value": "Replace lamp",
+          "x": 775,
+          "y": 444,
+          "center": true
+        }
+      ],
+      "composition_note": "Selected panels retain original image pixels and callouts. Only layout and labels are changed; no generated or retouched scientific content."
+    },
+    {
+      "slug": "aipparel",
+      "arxiv": "2412.03937",
+      "source": "figures/teaser1.pdf",
+      "crop": [
+        0.25,
+        0,
+        0.75,
+        1
+      ],
+      "fit": "contain",
+      "description": "Garment generation and editing examples from the teaser, keeping full garments",
+      "alt": "AIpparel generated garments on mannequins, including patterned jumpsuits and edited dresses",
+      "arxiv_source_url": "https://arxiv.org/src/2412.03937",
+      "retrieved_utc_date": "2026-10-26",
+      "source_archive_sha256": "411ad85f59e07d77fd88481b82ad8845862098675b82d077b013c52e744c5d25",
+      "figure_sha256": "6f44862efcc67a4516dd97a1e55506bae0d62e8ca3eb9737984a4c787386ce9c",
+      "rendered_dimensions": [
+        3200,
+        1152
+      ],
+      "render_density_dpi": 150,
+      "output": "aipparel.webp",
+      "output_dimensions": [
+        1040,
+        780
+      ],
+      "image_processing": [
+        "-crop",
+        "2400x1152+800+0",
+        "+repage",
+        "-filter",
+        "Lanczos",
+        "-resize",
+        "1040x780",
+        "-gravity",
+        "Center",
+        "-background",
+        "white",
+        "-extent",
+        "1040x780"
+      ]
+    },
+    {
+      "slug": "efficient-transformers",
+      "arxiv": "2402.13934",
+      "source": "figures/results.pdf",
+      "trim": true,
+      "fit": "contain",
+      "padding": 20,
+      "description": "Complete main results heatmap; all model/task labels, axes, and color scale retained",
+      "alt": "Accuracy heatmaps comparing standard, linear, and sparse Transformers across arithmetic, edit distance, and longest increasing subsequence tasks",
+      "arxiv_source_url": "https://arxiv.org/src/2402.13934",
+      "retrieved_utc_date": "2026-10-26",
+      "source_archive_sha256": "07f896c0c1e3516cd6a945508a47c0a183dfb5211ac59c6da6a5d9598da4dfb6",
+      "figure_sha256": "2f3f1d4cd83fcd3b19786e3a9e81b1be0e4a07312181d963424d0c00628676e8",
+      "rendered_dimensions": [
+        1504,
+        1022
+      ],
+      "render_density_dpi": 150,
+      "output": "efficient-transformers.webp",
+      "output_dimensions": [
+        1040,
+        780
+      ],
+      "image_processing": [
+        "-fuzz",
+        "1%",
+        "-trim",
+        "+repage",
+        "-filter",
+        "Lanczos",
+        "-resize",
+        "1000x740",
+        "-gravity",
+        "Center",
+        "-background",
+        "white",
+        "-extent",
+        "1000x740",
+        "-gravity",
+        "Center",
+        "-extent",
+        "1040x780"
+      ]
+    },
+    {
+      "slug": "maskomaly",
+      "arxiv": "2305.16972",
+      "source": "images/stacked_teasers.png",
+      "crop_pixels": [
+        160,
+        720,
+        960,
+        720
+      ],
+      "fit": "contain",
+      "description": "Forklift anomaly segmentation from the lower-left SMIYC teaser panel",
+      "alt": "Maskomaly highlights an anomalous forklift in red on a street",
+      "arxiv_source_url": "https://arxiv.org/src/2305.16972",
+      "retrieved_utc_date": "2026-10-26",
+      "source_archive_sha256": "4268824d1680483d83535c9929d523e44593e03e8c39743c7a35fe190cdfe527",
+      "figure_sha256": "c834b8f43256afff42aa2367304fbc7c3314e4269e5bb98508b1d20b75f5c64c",
+      "rendered_dimensions": [
+        5120,
+        1440
+      ],
+      "render_density_dpi": null,
+      "output": "maskomaly.webp",
+      "output_dimensions": [
+        1040,
+        780
+      ],
+      "image_processing": [
+        "-crop",
+        "960x720+160+720",
+        "+repage",
+        "-filter",
+        "Lanczos",
+        "-resize",
+        "1040x780",
+        "-gravity",
+        "Center",
+        "-background",
+        "white",
+        "-extent",
+        "1040x780"
+      ]
+    }
+  ]
+}
