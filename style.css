@@ -49,6 +49,25 @@ summary {
     cursor: pointer;
 }
 
+.skip-link {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 200;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    transform: translateY(-200%);
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+.dark-mode .skip-link {
+    background-color: #252525;
+}
+
 .highlight {
     color: #e74c3c;
 }
@@ -90,6 +109,28 @@ summary {
     display: flex;
     justify-content: flex-end;
     padding: 0 20px;
+}
+
+/* Secondary-page layout */
+.page-navigation {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.privacy-page {
+    max-width: 800px;
+}
+
+.privacy-page h1 {
+    line-height: 1.2;
+}
+
+.privacy-page .updated {
+    color: #666;
+}
+
+.dark-mode .privacy-page .updated {
+    color: #aaa;
 }
 
 /* Typography */
@@ -173,7 +214,9 @@ h2 {
 }
 
 .profile-image {
+    display: block;
     max-width: 200px;
+    height: auto;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -521,6 +564,10 @@ footer {
     border-top-color: #333;
 }
 
+footer p {
+    margin: 5px 0;
+}
+
 /* Responsive design */
 @media (max-width: 900px) {
     .container {
@@ -588,4 +635,18 @@ footer {
 .mentored-students-list li {
     margin-bottom: 0.5em;
     font-size: 1em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .publication-card,
+    .paper-link,
+    .social-links a,
+    .bio a,
+    .dark-mode-toggle {
+        transition: none;
+    }
+
+    .publication-card:hover {
+        transform: none;
+    }
 }

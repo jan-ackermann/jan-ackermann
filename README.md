@@ -20,6 +20,6 @@ However, my expertise lies in the intersection of **Vision**, **Graphics**, and 
 
 ## Contact 📫
 - 📧 [first].[last] [at] cs.stanford.edu
-- 🌐 [Website](https://jan-ackermann.github.io/)
+- 🌐 [Website](https://janackermann.info/)
 - 🔗 [LinkedIn](https://www.linkedin.com/in/jan-ackermann/)
 - 🔗 [Twitter/X](https://x.com/jan_on_x)
