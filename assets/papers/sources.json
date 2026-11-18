@@ -1,6 +1,53 @@
 {
-  "note": "Thumbnails extracted from arXiv source figures. Some comparative thumbnails recompose selected source panels with readable labels; original image content and callouts are retained. Fitting does not stretch images. Normalized crop coordinates use the rendered figure and an upper-left origin.",
+  "note": "Thumbnails sourced from arXiv figures and official project-page assets. Some comparative thumbnails recompose selected source panels with readable labels; original image content and callouts are retained. Fitting does not stretch images. Normalized crop coordinates use the rendered figure and an upper-left origin.",
   "thumbnails": [
+    {
+      "slug": "dwd",
+      "arxiv": "2611.22287",
+      "source": "Figure 1(b), page 1",
+      "source_url": "https://hanshengchen.com/dwd/static/paper.pdf",
+      "retrieved_utc_date": "2026-11-18",
+      "source_pdf_sha256": "49b4ff6294c0f2738f41165920eda381a67b2e468d91878ed35f41ee9a01c0dd",
+      "fit": "contain",
+      "description": "Baseline versus DWD portrait detail comparison from the paper teaser, retaining original labels and full-image insets",
+      "alt": "Baseline and DWD portrait comparison from the paper teaser, showing finer skin and hair texture with DWD",
+      "output": "dwd.webp",
+      "output_dimensions": [
+        1040,
+        780
+      ],
+      "render_density_dpi": 300,
+      "source_crop_pixels": [
+        1050,
+        980,
+        1050,
+        785
+      ],
+      "image_processing": [
+        "-density",
+        "300",
+        "-background",
+        "white",
+        "-alpha",
+        "remove",
+        "-crop",
+        "1050x785+1050+980",
+        "+repage",
+        "-filter",
+        "Lanczos",
+        "-resize",
+        "1040x780",
+        "-gravity",
+        "center",
+        "-background",
+        "white",
+        "-extent",
+        "1040x780",
+        "-quality",
+        "92"
+      ],
+      "composition_note": "Cropped from the original PDF teaser; no generated or retouched scientific content."
+    },
     {
       "slug": "fluidgen",
       "arxiv": "2610.25660",
